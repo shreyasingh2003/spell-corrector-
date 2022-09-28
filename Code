@@ -9,3 +9,14 @@ data = pd.read_csv("clean_data.csv ")
 tf = TfidfVectorizer()
 vectors = tf.fit_transform(data["text"])
 v = tf.vocabulary_
+
+
+def corrector2(word):
+    sim = [jaro_similarity(word, i) for i in v.keys()]
+    
+    df = pd.DataFrame.from_dict(probs, orient='index').reset_index()
+    df = df.rename(columns={"index":"word", 0 : "probs"})
+    df["sim"] = sim
+    show = df.sort_values(["sim","probs"], ascending=False).head()
+    
+    return show
