@@ -1,5 +1,5 @@
-##Word predictor
-This project is result of contribution with my teammate
+## Word predictor
+This project is result of contribution with my teammate:-
 Shreya AND Aman
 
 While simply checking for spelling mistakes is a useful tool, a more applicable example of what’s really used in projects are programs that perform the spelling correction.
