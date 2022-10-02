@@ -3,7 +3,7 @@ from turtle import end_fill
 import pandas as pd
 from nltk.metrics.distance import jaro_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-data = pd.read_csv("clean_data.csv ")
+data = pd.read_csv("clean_data.csv")
 
 
 tf = TfidfVectorizer()
